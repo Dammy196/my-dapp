@@ -1,17 +1,70 @@
-node_modules
-.env
+# ===========================
+# 🚀 Root & Node Environment
+# ===========================
 
-# Hardhat files
+node_modules/
+.env
+.env.local
+.env.*.local
+
+# ===========================
+# ⚙️ Hardhat & Solidity
+# ===========================
+
+# Hardhat build + cache
 /cache
 /artifacts
 
-# TypeChain files
+# TypeChain generated types
 /typechain
 /typechain-types
 
-# solidity-coverage files
+# Solidity coverage reports
 /coverage
 /coverage.json
 
-# Hardhat Ignition default folder for deployments against a local node
+# Hardhat Ignition default local deployment folder
 ignition/deployments/chain-31337
+
+# Foundry / test artifacts (if used)
+out/
+cache_foundry/
+artifacts_foundry/
+
+# ===========================
+# ⚛️ React Frontend (CRA)
+# ===========================
+
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.DS_Store
+frontend/coverage/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# ===========================
+# 💻 OS / Editor / Misc
+# ===========================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# VSCode settings (keep useful ones only)
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Git merge conflict backups
+*.orig
