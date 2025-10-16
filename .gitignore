@@ -68,3 +68,11 @@ Desktop.ini
 
 # Git merge conflict backups
 *.orig
+ 
+# Recommended ignore patterns for Hardhat/CRA development
+build/
+dist/
+*.keystore
+.direnv/
+ganache/
+anvil/
